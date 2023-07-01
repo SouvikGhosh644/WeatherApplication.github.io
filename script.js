@@ -69,7 +69,16 @@ async function checkWeather(city)
 
 //active search button//
 search_btn.addEventListener("click", () => {
-    //weather function call//
-    checkWeather(search_box.value);
+
+    // Get the input value
+    const inputValue = search_box.value;
+
+    if(inputValue.trim() === ""){
+        alert("You must have to enter a city!!");
+    }
+    else{
+        //weather function call//
+        checkWeather(inputValue);
+    }
 })
 
