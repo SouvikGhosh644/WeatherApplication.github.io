@@ -9,6 +9,8 @@ const search_box = document.querySelector(".search input");
 const search_btn = document.querySelector(".search button");
 const weather_icon = document.querySelector(".weather_icon");
 
+
+
 // function to get weather
 async function checkWeather(city)
 {
@@ -24,6 +26,7 @@ async function checkWeather(city)
         // do not display the weather details//
         document.querySelector(".weather").style.display = "none";
     }
+
     // Correct input city//
     else
     {
